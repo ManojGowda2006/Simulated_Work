@@ -1,0 +1,140 @@
+/* Professional menu display for Delish Diner */
+/* Add a hover effect to menu items */
+/* Create a responsive grid layout for menu items */
+/* Add fade-in animation for section headers */
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #fff8f6;
+    margin: 0;
+    color: #2d2d2d;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #d7263d 0%, #fff 100%);
+    color: #fff;
+    padding: 48px 0 32px 0;
+    text-align: center;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    box-shadow: 0 4px 24px #d7263d22;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 2px 12px #d7263d44;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.95;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 48px auto 32px auto;
+    max-width: 900px;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #d7263d11, 0 1.5px 0 #d7263d22;
+    padding: 32px 36px 56px 36px; /* Increased bottom padding to prevent overlap */
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #d7263d33, 0 2px 0 #d7263d44;
+}
+
+.menu-item h2 {
+    color: #d7263d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu-item p {
+    color: #555;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.menu-item span {
+    background: #d7263d;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 7px 22px;
+    border-radius: 18px;
+    box-shadow: 0 1px 6px #d7263d22;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+}
+
+footer {
+    background: #d7263d;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 14px 0;
+    font-size: 1.08rem;
+    letter-spacing: 1px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -2px 12px #d7263d33;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        gap: 18px;
+        padding: 0 2vw;
+    }
+    .menu-item {
+        min-width: 220px;
+        padding: 24px 12px 24px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 32px 0 18px 0;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .menu-item {
+        width: 90vw;
+        min-width: unset;
+        max-width: 98vw;
+        padding: 18px 6vw 32px 6vw;
+    }
+}
