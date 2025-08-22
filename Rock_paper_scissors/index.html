@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Rock Paper Scissors</h1>
+        <div class="score-container">
+            <div class="score-box">
+                <p>You</p>
+                <span id="player-score">0</span>
+            </div>
+            <div class="vs">vs</div>
+            <div class="score-box">
+                <p>Computer</p>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div class="round-counter-container">
+            <p id="round-counter">Round 1/5</p>
+        </div>
+
+        <div class="choices-container">
+            <div class="choice-btn" data-choice="rock">
+                <img src="https://shorturl.at/5bJ5A" alt="Rock">
+                <span>Rock</span>
+            </div>
+            <div class="choice-btn" data-choice="paper">
+                <img src="https://img.icons8.com/plasticine/100/paper.png" alt="Paper">
+                <span>Paper</span>
+            </div>
+            <div class="choice-btn" data-choice="scissors">
+                <img src="https://shorturl.at/8FxtA" alt="Scissors">
+                <span>Scissors</span>
+            </div>
+        </div>
+
+        <div class="display-choices">
+            <div class="player-choice-display">
+                <p>Your choice</p>
+                <div id="player-choice-icon" class="choice-icon">?</div>
+            </div>
+            <div class="computer-choice-display">
+                <p>Computer's choice</p>
+                <div id="computer-choice-icon" class="choice-icon">?</div>
+            </div>
+        </div>
+
+        <div class="message-container">
+            <p id="game-message">Make your choice!</p>
+        </div>
+        
+        <button id="reset-game-btn" class="reset-btn">
+            <img src="https://img.icons8.com/ios-filled/50/reset.png" alt="Reset icon">
+            Reset Game
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
