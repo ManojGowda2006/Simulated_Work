@@ -1,0 +1,7 @@
+Prompt: “Generate a responsive login page with email + password using HTML, CSS, and JS only frontend”
+
+Response: Gave base code structure with styling suggestions.
+
+Prompt: “Make it clean, centered, and add validation for empty inputs”
+
+Response: Added form validation and improved CSS.

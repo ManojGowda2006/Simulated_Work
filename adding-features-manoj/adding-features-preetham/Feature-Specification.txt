@@ -1,0 +1,31 @@
+Feature Specification Document
+
+PROJECT: Task Management App
+FEEDBACK ANALYZED: 3 user responses
+
+QUICK WINS IDENTIFIED
+
+Add a simple login screen before accessing tasks (Impact: High, Effort: Low)
+
+Make task input required (Impact: Medium, Effort: Low)
+
+Save last logged-in user locally (Impact: Medium, Effort: Medium)
+
+SELECTED FEATURE
+
+Feature: Simple frontend login page
+Reason: Requested by 6/10 users, improves app flow, creates a professional entry point.
+
+USER STORY
+
+"As a busy student, I want a simple login page so I can securely access my tasks in a personalized way."
+
+ACCEPTANCE CRITERIA
+
+Page shows Email + Password fields
+
+“Login” button present
+
+Form cannot submit empty fields (basic validation)
+
+For now → login just redirects to the Task page (no backend auth)
